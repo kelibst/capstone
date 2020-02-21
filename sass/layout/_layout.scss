@@ -1,0 +1,270 @@
+@import 'sass/components/components';
+.header{
+
+    &-container {
+        min-height: 500px;
+        height: 80vh;
+        background: $header-gradient, url(../img/children.jpg);
+        background-repeat: no-repeat;
+        }
+
+    background-color: $primary-color;
+    padding: 0 $small;
+
+    &-brand{
+        float: left;
+        font-size: $large;
+        padding: 2rem;
+        transition: all .5s;
+        &:hover{
+            @include hover-with-effect;
+        }
+        &-title{
+            color: white;
+            text-decoration: none;
+           
+            &:hover{
+                color: lightgrey;
+                
+               
+            }
+        }
+    }
+
+    &-icons{
+        color: white;
+    }
+    
+    &-nav{
+
+        &-container{
+            float: right;
+        }
+
+        &-ul{
+            display: flex;
+            padding: 0 $medium;
+            
+            &-li{
+                padding-right: 1rem;
+                list-style: none;
+                padding: $medium $small;
+                transition: all .5s;
+
+                &:hover{
+                   @include hover-with-effect;
+                }
+                &-a{
+                    @include link-white;
+                    font-size: $medium;
+                    
+                }
+            }
+        }
+    }
+    
+
+    &-form{
+
+        padding: $medium;
+        width: 50%;
+        
+
+        &-input{
+            box-sizing: border-box;
+            width: 85%;
+            padding: $small;
+            border-radius: 5px 0 0 5px;
+            transition: all .4s;
+            &:focus{
+                border: 1px solid red;
+                border-radius: 15px 0 0 15px;
+            }
+        
+        &-container{
+            padding-top: $medium;
+            
+        }
+    }
+        &-header{
+            font-size: $large;
+           @include bold-uppercase;
+            color: white;
+            letter-spacing: 2px;
+
+            &-label{
+                @include bold-uppercase;
+                font-size: 1.8rem;
+            }
+        }
+        
+        & fieldset{
+            padding: $medium;
+            background-color: #d3d3d38a;
+            @include border-small;
+            border: none;
+        }
+
+        &-container{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+
+        }
+    
+    }
+    
+    &-btn{
+        width: 20rem;
+        text-align: center;
+        padding: 1.3rem;
+        margin: 3rem auto;
+        
+        &-icon{
+        font-size: 2rem;
+    }
+}
+
+   
+}
+
+.steps{
+    font-size: 1.6rem;
+    width: 80%;
+    margin: 3rem auto;
+    text-align: center;
+
+
+    &-container{
+
+        &-contents{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: $medium;
+        }
+    }
+}
+
+.more{
+    &-item{
+        &-text-container{
+            float: left;
+        }
+        &-container{
+            display: flex;
+            width: 80%;
+            margin: 0 auto 3rem;
+            font-size: 1.6rem;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 2rem;
+            color: white;
+        }
+    }
+}
+.footer{
+
+    padding: 2rem 0;
+    font-size: 1.6rem;
+    background: black;
+
+    &-brand{
+        color: white;
+        padding: 1.5rem;
+        border: 1px solid white;
+        border-radius: 3rem;
+        font-size: 1.8rem;
+        cursor: pointer;
+        background: #1a1a1a66;
+        transition: all .4s;
+        &:hover{
+            @include hover-with-effect;
+            transform: scaleX(1.2);
+            margin: 0 2rem;
+        }
+    }
+
+    &-ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+
+    & li{
+        padding: 0 1.5rem;
+        border-top: 1px solid white;
+        
+        border-bottom: 1px solid white;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        transition: all .2s;
+        &:hover{
+            @include hover-with-effect;
+        }
+    }
+
+    & a{
+        @include link-white;
+        @include bold-uppercase;
+        padding-right: 3rem;
+        
+
+    }
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .header{
+
+
+      &-container{
+        height: 100vh;
+      }
+
+      &-form{
+        width: 100%;
+        text-align: center;      }
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &-nav{
+        &-container{
+          width: 100%;
+        }
+
+        &-ul{
+          justify-content: space-evenly;
+        }
+      }
+      
+    }
+    .col-sm-d-none{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1024px){
+    
+    .col-sm-d-none{
+        display: none;
+      }
+
+    .header{
+
+      &-brand{
+        padding: 2rem 0;
+      }
+      &-nav{
+
+        &-ul{
+          padding: 0;
+        }
+      }
+    }
+  }
+

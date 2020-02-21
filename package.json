@@ -1,0 +1,24 @@
+{
+  "name": "capstone",
+  "version": "1.0.0",
+  "description": "an orphanage and adoption home",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  },
+  "scripts": {
+    "test": "node-sass sass/ s",
+    "scss": "node-sass --watch sass -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kelibst/capstone.git"
+  },
+  "author": "kelibst",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kelibst/capstone/issues"
+  },
+  "homepage": "https://github.com/kelibst/capstone#readme"
+}

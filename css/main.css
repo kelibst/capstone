@@ -1,0 +1,285 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  box-sizing: border-box; }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.btn, .btn:focus {
+  text-decoration: none; }
+
+.btn-red {
+  background-color: red;
+  color: white; }
+  .btn-red:hover {
+    background-color: #910000; }
+  .btn-red-search {
+    position: relative;
+    right: 1rem;
+    border-radius: 15px 0 0 15px; }
+
+.btn-primary {
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 12px;
+  font-size: medium; }
+
+.btn-grey {
+  background-color: lightgray;
+  color: black; }
+
+.btn:hover {
+  background-color: darkgray;
+  transform: translateY(); }
+
+.btn:focus {
+  box-shadow: none; }
+
+.rounded {
+  border-radius: 120rem; }
+
+.rounded.float-right {
+  width: 20rem;
+  height: 20rem;
+  padding: 2rem;
+  float: right; }
+
+.bg-orange-red {
+  background-color: orangered; }
+
+.bg-dark-grey {
+  background-color: darkgrey; }
+
+.bg-blue {
+  background-color: blue; }
+
+.header {
+  background-color: #da0101;
+  padding: 0 1rem; }
+  .header-container {
+    min-height: 500px;
+    height: 80vh;
+    background: linear-gradient(350deg, black, rgba(220, 0, 0, 0.544)), url(../img/children.jpg);
+    background-repeat: no-repeat; }
+  .header-brand {
+    float: left;
+    font-size: 3rem;
+    padding: 2rem;
+    transition: all .5s; }
+    .header-brand:hover {
+      transform: scaleY(1.3);
+      background-color: maroon; }
+    .header-brand-title {
+      color: white;
+      text-decoration: none; }
+      .header-brand-title:hover {
+        color: lightgrey; }
+  .header-icons {
+    color: white; }
+  .header-nav-container {
+    float: right; }
+  .header-nav-ul {
+    display: flex;
+    padding: 0 2rem; }
+    .header-nav-ul-li {
+      padding-right: 1rem;
+      list-style: none;
+      padding: 2rem 1rem;
+      transition: all .5s; }
+      .header-nav-ul-li:hover {
+        transform: scaleY(1.3);
+        background-color: maroon; }
+      .header-nav-ul-li-a {
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 2rem; }
+  .header-form {
+    padding: 2rem;
+    width: 50%; }
+    .header-form-input {
+      box-sizing: border-box;
+      width: 85%;
+      padding: 1rem;
+      border-radius: 5px 0 0 5px;
+      transition: all .4s; }
+      .header-form-input:focus {
+        border: 1px solid red;
+        border-radius: 15px 0 0 15px; }
+      .header-form-input-container {
+        padding-top: 2rem; }
+    .header-form-header {
+      font-size: 3rem;
+      text-transform: uppercase;
+      font-weight: bolder;
+      color: white;
+      letter-spacing: 2px; }
+      .header-form-header-label {
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 1.8rem; }
+    .header-form fieldset {
+      padding: 2rem;
+      background-color: #d3d3d38a;
+      border-radius: 5px;
+      border: none; }
+    .header-form-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%; }
+  .header-btn {
+    width: 20rem;
+    text-align: center;
+    padding: 1.3rem;
+    margin: 3rem auto; }
+    .header-btn-icon {
+      font-size: 2rem; }
+
+.steps {
+  font-size: 1.6rem;
+  width: 80%;
+  margin: 3rem auto;
+  text-align: center; }
+  .steps-container-contents {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem; }
+
+.more-item-text-container {
+  float: left; }
+
+.more-item-container {
+  display: flex;
+  width: 80%;
+  margin: 0 auto 3rem;
+  font-size: 1.6rem;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2rem;
+  color: white; }
+
+.footer {
+  padding: 2rem 0;
+  font-size: 1.6rem;
+  background: black; }
+  .footer-brand {
+    color: white;
+    padding: 1.5rem;
+    border: 1px solid white;
+    border-radius: 3rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    background: #1a1a1a66;
+    transition: all .4s; }
+    .footer-brand:hover {
+      transform: scaleY(1.3);
+      background-color: maroon;
+      transform: scaleX(1.2);
+      margin: 0 2rem; }
+  .footer-ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; }
+    .footer-ul li {
+      padding: 0 1.5rem;
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      transition: all .2s; }
+      .footer-ul li:hover {
+        transform: scaleY(1.3);
+        background-color: maroon; }
+    .footer-ul a {
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bolder;
+      padding-right: 3rem; }
+
+@media screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .header-container {
+      height: 100vh; }
+    .header-form {
+      width: 100%;
+      text-align: center; }
+    .header-nav-container {
+      width: 100%; }
+    .header-nav-ul {
+      justify-content: space-evenly; }
+  .col-sm-d-none {
+    display: none; } }
+
+@media screen and (max-width: 1024px) {
+  .col-sm-d-none {
+    display: none; }
+  .header-brand {
+    padding: 2rem 0; }
+  .header-nav-ul {
+    padding: 0; } }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.btn, .btn:focus {
+  text-decoration: none; }
+
+.btn-red {
+  background-color: red;
+  color: white; }
+  .btn-red:hover {
+    background-color: #910000; }
+  .btn-red-search {
+    position: relative;
+    right: 1rem;
+    border-radius: 15px 0 0 15px; }
+
+.btn-primary {
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 12px;
+  font-size: medium; }
+
+.btn-grey {
+  background-color: lightgray;
+  color: black; }
+
+.btn:hover {
+  background-color: darkgray;
+  transform: translateY(); }
+
+.btn:focus {
+  box-shadow: none; }
+
+.rounded {
+  border-radius: 120rem; }
+
+.rounded.float-right {
+  width: 20rem;
+  height: 20rem;
+  padding: 2rem;
+  float: right; }
+
+.bg-orange-red {
+  background-color: orangered; }
+
+.bg-dark-grey {
+  background-color: darkgrey; }
+
+.bg-blue {
+  background-color: blue; }
