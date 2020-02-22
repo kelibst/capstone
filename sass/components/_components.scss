@@ -8,8 +8,7 @@ $small: 1rem;
 $medium: 2rem;
 $large: 3rem;
 
-@mixin link-white {
-    color: white;
+@mixin link{
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -80,6 +79,10 @@ $header-gradient:  linear-gradient(
 
   }
 
+  @mixin  ul-css {
+    list-style: none;
+    display: flex;
+  }
  
 
   .rounded{
@@ -91,6 +94,11 @@ $header-gradient:  linear-gradient(
     height: 20rem;
     padding: $medium;
     float: right;
+   cursor: pointer;
+
+   &:hover{
+     background-color: red;
+   }
   }
 
   .bg-orange-red{
@@ -101,4 +109,54 @@ $header-gradient:  linear-gradient(
   }
   .bg-blue{
     background-color: blue;
+  }
+
+  .bg-orange{
+    background-color: orange;
+  }
+
+  .btn.btn-primary.btn-red.btn-red-search.footer-input-btn {
+    border-radius: 0;
+    background-color: rgb(58, 57, 57);
+
+    &:hover{
+      background-color: darkgrey;
+    }
+  }
+  .text{
+    &-white, &-white a{
+      color: white;
+    }
+
+    &-grey, &-grey a{
+      color: grey;
+    }
+
+    &-red, &-red a{
+      color: red;
+    }
+
+    &-light-gray{
+      color: lightgray;
+    }
+  }
+
+  .header-container.no-bg-no-height{
+    min-height: auto;
+    height: auto;
+    background: white;
+  }
+
+  @mixin  grids-config {
+    display: grid;
+    grid-gap: $medium;
+  }
+
+  @mixin bold-grey-header{
+    color: gray;
+    font-weight: bolder;
+    margin: 2rem 0;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2rem;
   }
