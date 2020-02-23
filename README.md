@@ -1,10 +1,10 @@
-# appleStore ([The Odin Project](https://web.archive.org/web/20140301004610/http://www.apple.com/))
+# Capstone HTML project ([The microverse capstone project](microverse.org))
 
-This is the first Solo project of the Main HTML/CSS curriculum at [Microverse](https:www.microverse.org/) - @microverseinc. 
+This is the Microverse capstone project of the Main HTML/CSS curriculum at [Microverse](https:www.microverse.org/) - @microverseinc. 
 
-just a clone of an old archived ([apple](https://web.archive.org/web/20140301004610/http://www.apple.com/)) page: 
+It is a fun page I design with html and sass and css based on the ([Mathew Njuguna designs](https://www.behance.net/mathewnjuguna)) page: 
 
-![demopage](demopage.png)
+![demopage](img/demopage.png)
 
 ## Built With
 
@@ -13,7 +13,7 @@ just a clone of an old archived ([apple](https://web.archive.org/web/20140301004
 
 ## Live Demo
 
-[Live Demo Link](https://suspicious-mcclintock-1d92e4.netlify.com/)
+[Live Demo Link](https://goofy-hopper-c53e91.netlify.com/)
 
 ## Author
 
