@@ -18,8 +18,8 @@
         <nav class="header-nav-container">
             <ul class="header-nav-ul">
                 <li class="header-nav-ul-li"><a href="#" class="header-nav-ul-li-a"><i
-                            class="fas fa-map-marker-alt"></i> &nbsp; <span
-                            class="col-sm-d-none">Orphanages</span></a></li>
+                            class="fas fa-map-marker-alt"></i> &nbsp; <span class="col-sm-d-none">Orphanages</span></a>
+                </li>
                 <li class="header-nav-ul-li"><a href="#" class="header-nav-ul-li-a"><i class="fas fa-user"></i>
                         &nbsp;<span class="col-sm-d-none">About</span> </a></li>
                 <li class="header-nav-ul-li"><a href="#" class="header-nav-ul-li-a"><i class="fas fa-pen"></i>
@@ -31,74 +31,75 @@
         </nav>
     </div>
 
-   
+
 </header>
 
-<section class="resutls">
+<section class="results">
+    <h4>Filter by name, Region, district or educational level</h4>
     <form action="result.html" class="results-form">
-    <legend>Filter by name, Region, district or educational level</legend>
+        
 
-    <fieldset>
-        <div>
-            <label  for="or-name">Orphanage Name*</label>
-            <input class="results-first" id="or-name" type="text">
-        </div>
-       
-
-        <div>
-            <label for="regions">Region*</label>
-
-        <select id="regions" name="regions">
-            
-            <option value="Ahafo">Ahafo Region</option>
-            <option value="Bono">Bono Region</option>
-            <option value="East">Bono East Region</option>
-            <option value="Oti">Oti Region</option>
-            <option value="Oti">North East Region </option>
-            <option value="Oti">Savannah Region</option>
-            <option value="Oti">Western North Region</option>
-            <option value="Oti">Western Region</option>
-            <option value="Oti">Western Region</option>
-            <option value="Oti">Volta Region </option>
-            <option value="Oti">Greater Accra Region</option>
-            <option value="Oti">Eastern Region</option>
-            <option value="Oti">Ashanti Region</option>
-
-            <option value="Oti">Central Region </option>
-            <option value="Oti">Northern Region</option>
-            <option value="Oti">Upper East Region</option>
-            <option value="Oti">Upper West Region</option>
-          </select>
-        </div> 
-         
-        <div>
-            <label for="levels">Level*</label>
-
-            <select name="level" id="levels">
-                <option value="kindergaten">kindergaten</option>
-                <option value="primary">primary</option>
-                <option value="jhs">Junior High</option>
-            </select>
-        </div>
-
-        <div>
-            <label for="genders">Gender*</label>
-            <select name="gender" id="genders">
-              
-                <option value="kindergaten">Male</option>
-                <option value="primary">female</option>
-            </select>
-        </div>
-
-<div class="results-btns">
-    <button type="submit" class="btn btn-primary bg-blue text-white">Search</button>
-
-<button type="clear" class="btn btn-primary bg-orange text-white">Clear Filter</button>
-</div>
+        <fieldset>
+            <div class="resutls-name">
+                <label for="or-name">Orphanage Name*</label>
+                <input class="results-first" id="or-name" type="text">
+            </div>
 
 
-    </fieldset>
-   
+            <div>
+                <label for="regions">Region*</label>
+
+                <select id="regions" name="regions">
+
+                    <option value="Ahafo">Ahafo Region</option>
+                    <option value="Bono">Bono Region</option>
+                    <option value="East">Bono East Region</option>
+                    <option value="Oti">Oti Region</option>
+                    <option value="Oti">North East Region </option>
+                    <option value="Oti">Savannah Region</option>
+                    <option value="Oti">Western North Region</option>
+                    <option value="Oti">Western Region</option>
+                    <option value="Oti">Western Region</option>
+                    <option value="Oti">Volta Region </option>
+                    <option value="Oti">Greater Accra Region</option>
+                    <option value="Oti">Eastern Region</option>
+                    <option value="Oti">Ashanti Region</option>
+
+                    <option value="Oti">Central Region </option>
+                    <option value="Oti">Northern Region</option>
+                    <option value="Oti">Upper East Region</option>
+                    <option value="Oti">Upper West Region</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="levels">Level*</label>
+
+                <select name="level" id="levels">
+                    <option value="kindergaten">kindergaten</option>
+                    <option value="primary">primary</option>
+                    <option value="jhs">Junior High</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="genders">Gender*</label>
+                <select name="gender" id="genders">
+
+                    <option value="kindergaten">Male</option>
+                    <option value="primary">female</option>
+                </select>
+            </div>
+
+            <div class="results-btns">
+                <button type="submit" class="btn btn-primary bg-blue text-white">Search</button>
+
+                <button type="button" class="btn btn-primary bg-orange text-white">Clear Filter</button>
+            </div>
+
+
+        </fieldset>
+
     </form>
 </section>
 
@@ -106,19 +107,56 @@
 <main class="main">
     <h4 class="main-header">Search Result(s) Found 12 Orphanages</h4>
 
-    <div class="main-grid">
-        <div class="main-grid-item">Demo One</div>
-        <div class="main-grid-item">Demo One</div>
-        <div class="main-grid-item">Demo One</div>
-        <div class="main-grid-item">Demo One</div>
-        <div class="main-grid-item">Demo One</div>
-        <div class="main-grid-item">Demo One</div>
-        <div class="main-grid-item">Demo One</div>
-        <div class="main-grid-item">Demo One</div>
-        <div class="main-grid-item">Demo One</div>
-        <div class="main-grid-item">Demo One</div>
-        <div class="main-grid-item">Demo One</div>
-        <div class="main-grid-item">Demo One</div>
+    <div class="main-grid text-white">
+        <div class="main-grid-item">
+            <h5>Demo One: Priscilla Ocla</h5>
+            <a href="signup.html" class="btn btn-primary bg-orange text-white">Sign Up</a>
+        </div>
+
+        <div class="main-grid-item">
+            <h5>Demo One: Priscilla Ocla</h5>
+        </div>
+
+        <div class="main-grid-item">
+            <h5>Demo One: Priscilla Ocla</h5>
+        </div>
+
+        <div class="main-grid-item">
+            <h5>Demo One: Priscilla Ocla</h5>
+        </div>
+
+        <div class="main-grid-item">
+            <h5>Demo One: Priscilla Ocla</h5>
+        </div>
+
+        <div class="main-grid-item">
+            <h5>Demo One: Priscilla Ocla</h5>
+        </div>
+
+        <div class="main-grid-item">
+            <h5>Demo One: Priscilla Ocla</h5>
+        </div>
+
+        <div class="main-grid-item">
+            <h5>Demo One: Priscilla Ocla</h5>
+        </div>
+
+        <div class="main-grid-item">
+            <h5>Demo One: Priscilla Ocla</h5>
+        </div>
+
+        <div class="main-grid-item">
+            <h5>Demo One: Priscilla Ocla</h5>
+        </div>
+
+        <div class="main-grid-item">
+            <h5>Demo One: Priscilla Ocla</h5>
+        </div>
+
+        <div class="main-grid-item">
+            <h5>Demo One: Priscilla Ocla</h5>
+        </div>
+
     </div>
 </main>
 
@@ -128,9 +166,9 @@
         <li><a href="#" class="footer-link">search</a></li>
         <li><a href="#" class="footer-link">about us</a></li>
         <li><a href="#" class="footer-link">advertise</a></li>
-        <div class="footer-brand col-sm-d-none">
+        <li class="footer-brand col-sm-d-none">
             <i class="fas fa-home"></i>
-        </div>
+        </li>
         <li><a href="#" class="footer-link">facebook</a></li>
         <li><a href="#" class="footer-link">twitter</a></li>
         <li><a href="#" class="footer-link">blog</a></li>
@@ -172,14 +210,16 @@
             <li><a href="#"><i class="fab fa-facebook-square" aria-hidden="true"></i></a></li>
             <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fab fa-youtube" ></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
 
         </ul>
 
         <a href="#">&copy; New-Home Fundation</a>
         <p class="footer-copyright-info">
-            <i class="fab fa-accessible-icon"></i> Designed to be accessibility friendly and based on design ideas of &nbsp;<a href="https://www.behance.net/mathewnjuguna">Mathew Njuguna</a>
+            <i class="fab fa-accessible-icon"></i> Designed to be accessibility friendly and based on design ideas of
+            &nbsp;<a href="https://www.behance.net/mathewnjuguna">Mathew Njuguna</a>
         </p>
     </div>
 </footer>
-<body>
+</body>
+</html>

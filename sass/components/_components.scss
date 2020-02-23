@@ -63,10 +63,7 @@ $header-gradient:  linear-gradient(
   &:hover{
       background-color: darkgray;
       transform: translateY();
-//       -webkit-box-shadow: 68px 190px 300px 200px rgba(255,255,255,0.98);
-// -moz-box-shadow: 68px 190px 300px 200px rgba(255,255,255,0.98);
-// box-shadow: 68px 190px 300px 200px rgba(255,255,255,0.98);
-// transform: translateY(2rem);
+
   }
   &:focus{
       box-shadow: none;
@@ -114,6 +111,12 @@ $header-gradient:  linear-gradient(
   .bg-orange{
     background-color: orange;
   }
+  .bg-light-gray{
+    background-color: lightgray;
+  }
+  .bg-red{
+    background-color: red;
+  }
 
   .btn.btn-primary.btn-red.btn-red-search.footer-input-btn {
     border-radius: 0;
@@ -128,8 +131,16 @@ $header-gradient:  linear-gradient(
       color: white;
     }
 
+    &-green, &-green a{
+      color: green;
+    }
+
     &-grey, &-grey a{
       color: grey;
+    }
+
+    &-blue, &-blue a{
+      color: blue;
     }
 
     &-red, &-red a{
@@ -159,4 +170,89 @@ $header-gradient:  linear-gradient(
     text-align: center;
     text-transform: capitalize;
     font-size: 2rem;
+  }
+
+  .pd{
+    &-x{
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &-y{
+      padding-top: 0;
+      padding-bottom: 0;
+
+      &-large{
+        padding-top: $large;
+        padding-bottom: $large;
+      }
+    }
+
+    &-small{
+      padding: $small;
+
+      &-l{
+        padding-left: $small;
+      }
+      &-r{
+        padding-right: $small;
+      }
+      &-t{
+        padding-top: $small;
+      }
+
+      &-b{
+        padding-bottom: $small;
+      }
+    }
+
+    &-medium{
+      padding: $medium;
+
+      &-l{
+        padding-left: $medium;
+      }
+      &-r{
+        padding-right: $medium;
+      }
+      &-t{
+        padding-top: $medium;
+      }
+
+      &-b{
+        padding-bottom: $medium;
+      }
+
+    }
+
+    &-large{
+      padding: $large;
+
+
+      &-l{
+        padding-left: $large;
+      }
+      &-r{
+        padding-right: $large;
+      }
+      &-t{
+        padding-top: $large;
+      }
+
+      &-b{
+        padding-bottom: $large;
+      }
+
+      
+    }
+    
+  }
+  .text-center{
+    text-align: center;
+  }
+  .uppercase{
+    text-transform: uppercase;
+  }
+  .bolder{
+    font-weight: bolder;
   }
