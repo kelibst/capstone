@@ -8,11 +8,13 @@
     "node-sass": "^4.13.1",
     "stylelint": "^13.2.0",
     "stylelint-config-recommended": "^3.0.0",
-    "stylelint-config-recommended-scss": "^4.2.0"
+    "stylelint-config-recommended-scss": "^4.2.0",
+    "stylelint-config-standard": "^20.0.0"
   },
   "scripts": {
     "test": "node-sass sass/ s",
-    "scss": "node-sass --watch sass -o css"
+    "scss": "node-sass --watch sass -o css",
+    "stylelint": "stylelint '**/*.scss'"
   },
   "repository": {
     "type": "git",
