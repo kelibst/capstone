@@ -323,7 +323,7 @@ input {
 
 .header-form-input {
   box-sizing: border-box;
-  width: 85%;
+  width: 80%;
   padding: 1rem;
   border-radius: 5px 0 0 5px;
   transition: all 0.4s;
