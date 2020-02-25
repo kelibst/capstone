@@ -290,10 +290,6 @@
 .results {
   font-size: 1.6rem;
 
-  h4 {
-    @include bold-grey-header;
-  }
-
   &-form {
     margin: 4rem auto;
     width: 100%;
