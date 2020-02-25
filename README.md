@@ -16,6 +16,7 @@ IT is build solely with html and css no grid at all.
 
 - HTML5 
 - CSS3
+- SASS
 
 ## Live Demo
 
@@ -31,6 +32,11 @@ IT is build solely with html and css no grid at all.
 ](https://www.linkedin.com/in/kekeli-dogbevi-958272108/)
 
 
+**👤 Marios Kanellopoulos**
+- Github: [@mariosknl](https://github.com/mariosknl)
+- Twitter: [@mariosknl](https://twitter.com/MariosKnl)
+- Linkedln: [marios-kanellopoulos](https://www.linkedin.com/in/marios-kanellopoulos-a99332181/)
+- [![Mariosknl is available for hire!](http://hireable.me/mariosknl)](http://hireable.me/p/mariosknl) 
 
 ## 📝 License
 
