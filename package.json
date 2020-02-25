@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "an orphanage and adoption home",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "stylelint-config-sass-guidelines": "^7.0.0"
+  },
   "devDependencies": {
     "node-sass": "^4.13.1",
     "stylelint": "^13.2.0",

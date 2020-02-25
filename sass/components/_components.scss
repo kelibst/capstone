@@ -1,0 +1,291 @@
+$small: 1rem;
+$medium: 2rem;
+$large: 3rem;
+
+@mixin link {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+$header-gradient: linear-gradient(
+  350deg,
+  rgb(0, 0, 0),
+  rgba(220, 0, 0, 0.544)
+);
+
+@mixin bold-uppercase {
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+@mixin border-small {
+  border-radius: 5px;
+}
+
+.btn {
+  text-decoration: none;
+
+  &-red {
+    background-color: red;
+    color: white;
+
+    &:hover {
+      background-color: #910000;
+    }
+
+    &-search {
+      align-self: flex-end;
+      border-radius: 5px;
+      padding: 8px;
+      position: relative;
+      right: 1rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &-primary {
+    @include bold-uppercase;
+
+    font-size: medium;
+  }
+
+  &-grey {
+    background-color: lightgray;
+    color: black;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  &:hover {
+    background-color: darkgray;
+  }
+}
+
+@mixin hover-with-effect {
+  background-color: maroon;
+  transform: scaleY(1.3);
+}
+
+@mixin ul-css {
+  display: flex;
+  list-style: none;
+}
+
+.rounded {
+  border-radius: 120rem;
+}
+
+.rounded.float-right {
+  cursor: pointer;
+  float: right;
+  height: 20rem;
+  padding: $medium;
+  width: 20rem;
+
+  &:hover {
+    background-color: red;
+  }
+}
+
+.bg-orange-red {
+  background-color: orangered;
+}
+
+.bg-dark-grey {
+  background-color: rgb(66, 66, 66);
+}
+
+.bg-black {
+  background-color: rgb(15, 14, 14);
+}
+
+.bg-blue {
+  background-color: blue;
+}
+
+.bg-orange {
+  background-color: orange;
+}
+
+.bg-light-gray {
+  background-color: lightgray;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.btn.btn-primary.btn-red.btn-red-search.footer-input-btn {
+  background-color: rgb(58, 57, 57);
+  border-radius: 0;
+
+  &:hover {
+    background-color: darkgrey;
+  }
+}
+
+.text {
+  &-large {
+    font-size: $large;
+  }
+
+  &-medium {
+    font-size: $medium;
+  }
+
+  &-small {
+    font-size: $small;
+  }
+
+  &-white,
+  &-white a {
+    color: white;
+  }
+
+  &-center {
+    text-align: center;
+  }
+
+  &-green,
+  &-green a {
+    color: green;
+  }
+
+  &-grey,
+  &-grey a {
+    color: grey;
+  }
+
+  &-blue,
+  &-blue a {
+    color: blue;
+  }
+
+  &-red,
+  &-red a {
+    color: red;
+  }
+
+  &-light-gray {
+    color: lightgray;
+  }
+}
+
+.header-container.no-bg-no-height {
+  background: white;
+  height: auto;
+  min-height: auto;
+}
+
+@mixin grids-config {
+  display: grid;
+  grid-gap: $medium;
+}
+
+@mixin bold-grey-header {
+  color: gray;
+  font-size: 2rem;
+  font-weight: bolder;
+  margin: 2rem 0;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+a.text-red {
+  color: red;
+}
+
+.pd {
+  &-x {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &-y {
+    padding-bottom: 0;
+    padding-top: 0;
+
+    &-small {
+      padding-bottom: $small;
+      padding-top: $small;
+    }
+
+    &-large {
+      padding-bottom: $large;
+      padding-top: $large;
+    }
+  }
+
+  &-small {
+    padding: $small;
+
+    &-l {
+      padding-left: $small;
+    }
+
+    &-r {
+      padding-right: $small;
+    }
+
+    &-t {
+      padding-top: $small;
+    }
+
+    &-b {
+      padding-bottom: $small;
+    }
+  }
+
+  &-medium {
+    padding: $medium;
+
+    &-l {
+      padding-left: $medium;
+    }
+
+    &-r {
+      padding-right: $medium;
+    }
+
+    &-t {
+      padding-top: $medium;
+    }
+
+    &-b {
+      padding-bottom: $medium;
+    }
+  }
+
+  &-large {
+    padding: $large;
+
+    &-l {
+      padding-left: $large;
+    }
+
+    &-r {
+      padding-right: $large;
+    }
+
+    &-t {
+      padding-top: $large;
+    }
+
+    &-b {
+      padding-bottom: $large;
+    }
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bolder {
+  font-weight: bolder;
+}
